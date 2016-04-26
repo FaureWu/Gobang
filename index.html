@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html;charset=UTF-8" http-equiv="content-type">
+  <meta name="keywords" content="gobang,五子棋,chess,人机大战,五子连珠">
+  <meta name="description" content="html5实现智能AI五子棋">
+  <title>五子棋</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<!--   <div class="main-screen">
+    <div class="left-screen screen"></div>
+    <div class="right-screen screen"></div>
+  </div> -->
+  <canvas id="gobang" class="gobang">你的浏览器不支持HTML5 Canvas，请升级浏览器！</canvas>
+<!--   <div>
+    <button id="replay">重玩</button>
+    <button id="gameover">结束</button>
+  </div> -->
+  <script type="text/javascript" src="js/tool.js"></script>
+  <script type="text/javascript">
+    ready(function() {
+      var gobang = new Gobang('gobang');
+      gobang.openCG();
+      // gobang.start();
+      // var replayDom = document.getElementById('replay'),
+      //     gameoverDom = document.getElementById('gameover');
+
+      // replayDom.onclick = function() {
+      //   gobang.replay();
+      //   return true;
+      // }
+
+      // gameoverDom.onclick = function() {
+      //   gobang.stop();
+      //   return true;
+      // }
+    });   
+  </script>
+  <script type="text/javascript" src="js/gobang.js"></script>
+</body>
+</html>
